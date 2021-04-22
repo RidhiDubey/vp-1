@@ -50,13 +50,23 @@ function draw() {
  
   //write code to display text lastFed time here
   if(lastFed>=12){
+    fill("white");
+    textSize(20);
     text("last fed:1:00 PM",350,30);
   }
   else if(lastFed==0){
+    fill("white");
+    textSize(20);
     text("last fed:12 AM",350,30);
   }
-  else {
+  else if(lastFed<=12){
+    fill("white");
+    textSize(20);
     text("last fed:8:00 AM",350,30);
+  }else{
+    fill("white");
+    textSize(20);
+    text("last fed:11:00 AM",350,30);
   }
  
   drawSprites();
